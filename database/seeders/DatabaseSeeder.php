@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             ColorSeeder::class,
             ListSeeder::class,
             TaskSeeder::class,
+            CategorySeeder::class,
+            TaskCategorySeeder::class,
             SubtaskSeeder::class,
         ]);
     }
