@@ -18,10 +18,10 @@ class CreateTasksTable extends Migration
             $table->foreignId('list_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->string('name');
-            $table->dateTime('reminder_datetime');
-            $table->date('due_date');
-            $table->text('attachment_url');
-            $table->text('note');
+            $table->dateTime('reminder_datetime')->nullable();
+            $table->date('due_date')->nullable();
+            $table->text('attachment_url')->nullable();
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }
